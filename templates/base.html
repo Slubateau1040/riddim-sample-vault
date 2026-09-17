@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Riddim Sample Vault</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'listRiddims' %}">Riddims</a>
+        <a href="{% url 'listSamples' %}">Samples</a>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
